@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Semáforo</title>
+</head>
+<body>
+    <main>
+        <div class="semaforo">
+            <div id="verde" onclick="mudarLuz('verde')" class="luz"></div>
+            <div id="amarelo" onclick="mudarLuz('amarelo')" class="luz"></div>
+            <div id="vermelho" onclick="mudarLuz('vermelho')" class="luz"></div>
+        </div>
+
+        <div id="timer" class="timer">3</div>
+        <button id="go" onclick="timer()">Go!</button>
+        <button id="stop" onclick="stop()">Stop</button>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
